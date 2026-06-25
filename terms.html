@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions | McCammon Advanced Dentistry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:  #1B2A4A;
+      --gold:  #C9A84C;
+      --cream: #F8F4ED;
+      --text:  #2E2E2E;
+      --light-gold: #E8D5A3;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    /* ── Header ── */
+    header {
+      background-color: var(--navy);
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--gold);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+
+    .logo-sub {
+      font-family: 'Montserrat', sans-serif;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-left: 32px;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--gold); }
+
+    /* ── Hero Banner ── */
+    .page-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #2a3f6a 100%);
+      padding: 60px 40px 50px;
+      text-align: center;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .page-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+    }
+
+    .page-hero p {
+      color: var(--light-gold);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ── Content ── */
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 32px 80px;
+    }
+
+    .effective-date {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--gold);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 2px;
+      margin-bottom: 48px;
+    }
+
+    .policy-section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(201,168,76,0.25);
+    }
+    .policy-section:last-of-type { border-bottom: none; }
+
+    .policy-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--navy);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-left: 14px;
+      border-left: 3px solid var(--gold);
+    }
+
+    .policy-section p {
+      font-size: 0.88rem;
+      color: #444;
+      margin-bottom: 14px;
+    }
+
+    .policy-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0;
+    }
+
+    .policy-section ul li {
+      font-size: 0.88rem;
+      color: #444;
+      padding: 8px 0 8px 22px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .policy-section ul li:last-child { border-bottom: none; }
+
+    .policy-section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    /* SMS Highlight Box */
+    .sms-box {
+      background: #fff;
+      border: 1px solid var(--gold);
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin: 24px 0;
+    }
+
+    .sms-box .sms-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .sms-box p {
+      font-size: 0.88rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .sms-box p:last-child { margin-bottom: 0; }
+
+    .compliance-badge {
+      background: var(--navy);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 20px 28px;
+      border-radius: 4px;
+      margin: 24px 0;
+      line-height: 1.7;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background-color: var(--navy);
+      padding: 32px 40px;
+      text-align: center;
+    }
+
+    footer p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    .gold-divider {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 20px;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 16px; padding: 24px 20px; }
+      nav a { margin-left: 16px; }
+      .page-hero { padding: 40px 20px; }
+      .content-wrap { padding: 40px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <div class="logo-text">McCammon Advanced Dentistry</div>
+      <div class="logo-sub">Tulsa, Oklahoma</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>Terms &amp; Conditions</h1>
+    <p>McCammon Advanced Dentistry &mdash; 5404 S Memorial Dr, Tulsa, OK</p>
+  </div>
+
+  <div class="content-wrap">
+
+    <span class="effective-date">Effective Date: July 14, 2026</span>
+
+    <!-- 1. Agreement -->
+    <div class="policy-section">
+      <h2>Agreement to Terms</h2>
+      <p>These Terms and Conditions ("Terms") govern your use of the McCammon Advanced Dentistry website located at <strong>mccammonadvanceddentistry.com</strong> and your communications with our office, including SMS/text messaging services. By accessing our website or providing us with your contact information, you agree to be bound by these Terms.</p>
+      <p>If you do not agree to these Terms, please do not use our website or submit your contact information through our forms.</p>
+    </div>
+
+    <!-- 2. Services -->
+    <div class="policy-section">
+      <h2>Dental Services</h2>
+      <p>McCammon Advanced Dentistry provides comprehensive dental care at 5404 S Memorial Drive, Tulsa, Oklahoma, including general dentistry, dental implants, oral surgery, and endodontic (root canal) services.</p>
+      <p>Information provided on this website is for general informational purposes only and does not constitute professional dental or medical advice. A formal patient-provider relationship is established only upon scheduling and attending an in-office appointment. Treatment recommendations are made solely by Dr. McCammon following an in-person examination.</p>
+    </div>
+
+    <!-- 3. Website Use -->
+    <div class="policy-section">
+      <h2>Website Use</h2>
+      <p>You agree to use this website only for lawful purposes and in a manner that does not infringe on the rights of others. You may not:</p>
+      <ul>
+        <li>Use the website to transmit harmful, offensive, or unlawful content</li>
+        <li>Attempt to gain unauthorized access to any part of the website or our systems</li>
+        <li>Copy, reproduce, or redistribute website content without our written permission</li>
+        <li>Use automated tools (bots, scrapers) to collect information from the site</li>
+      </ul>
+      <p>We reserve the right to suspend or terminate access to the website for violations of these Terms.</p>
+    </div>
+
+    <!-- 4. SMS Terms -->
+    <div class="policy-section">
+      <h2>SMS &amp; Text Messaging Terms</h2>
+
+      <div class="sms-box">
+        <div class="sms-label">SMS Program Disclosure</div>
+        <p>If you consent to receive SMS from McCammon Advanced Dentistry, you agree to receive appointment reminders, scheduling confirmations, patient care follow-ups, and general practice communications via SMS/text message from us.</p>
+        <p><strong>Reply STOP to unsubscribe. Reply HELP for help. Message and data rates may apply. Messaging frequency may vary.</strong></p>
+        <p>Visit <a href="privacy-policy.html" style="color: var(--gold);">our Privacy Policy</a> and these Terms &amp; Conditions for full details.</p>
+      </div>
+
+      <p><strong>Consent:</strong> By providing your mobile phone number and opting in to SMS communications — whether via a website form, in-office sign-up, or verbally — you expressly consent to receive text messages from McCammon Advanced Dentistry at the number provided. Consent is not a condition of receiving dental care.</p>
+
+      <p><strong>Message Types:</strong> SMS messages we send may include appointment reminders, scheduling confirmations and changes, post-treatment care reminders, patient satisfaction follow-ups, and general practice updates or announcements.</p>
+
+      <p><strong>Frequency:</strong> Messaging frequency may vary depending on your appointments and communications with our office. You may receive more messages during periods of active scheduling.</p>
+
+      <p><strong>Costs:</strong> Standard message and data rates may apply depending on your mobile carrier and plan. McCammon Advanced Dentistry does not charge for SMS communications, but your carrier may.</p>
+
+      <p><strong>Opting Out:</strong> You may opt out at any time by replying STOP to any text message. After opting out, you will receive one final confirmation and no further messages will be sent unless you choose to re-enroll.</p>
+
+      <p><strong>Help:</strong> For assistance with SMS communications, reply HELP to any message or contact our office directly.</p>
+
+      <p><strong>Supported Carriers:</strong> SMS services are supported by most major U.S. carriers. Service may not be available on all carriers or in all areas.</p>
+
+      <div class="compliance-badge">
+        &#128274; &nbsp;<strong>No mobile opt-in message consent will be shared with third parties or affiliates for marketing purposes.</strong>
+      </div>
+    </div>
+
+    <!-- 5. Appointments -->
+    <div class="policy-section">
+      <h2>Appointments &amp; Cancellations</h2>
+      <p>Appointment requests made through our website or via SMS are subject to availability and confirmation by our office. An appointment is not confirmed until you receive a confirmation from our team.</p>
+      <p>We ask that patients provide reasonable notice when canceling or rescheduling appointments. Repeated missed appointments without notice may affect your ability to schedule future appointments. Our office will communicate any applicable cancellation policies directly.</p>
+    </div>
+
+    <!-- 6. Intellectual Property -->
+    <div class="policy-section">
+      <h2>Intellectual Property</h2>
+      <p>All content on this website — including text, graphics, logos, and images — is the property of McCammon Advanced Dentistry and is protected by applicable copyright and intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without express written permission.</p>
+    </div>
+
+    <!-- 7. Disclaimers -->
+    <div class="policy-section">
+      <h2>Disclaimers &amp; Limitations</h2>
+      <p>This website and its content are provided "as is" without warranties of any kind, express or implied. McCammon Advanced Dentistry does not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+      <p>To the fullest extent permitted by law, McCammon Advanced Dentistry shall not be liable for any indirect, incidental, or consequential damages arising out of your use of, or inability to use, this website or our SMS communications.</p>
+      <p>Nothing on this website should be interpreted as creating a doctor-patient relationship or as a substitute for professional dental consultation.</p>
+    </div>
+
+    <!-- 8. Third-Party Links -->
+    <div class="policy-section">
+      <h2>Third-Party Links</h2>
+      <p>Our website may contain links to third-party websites for your convenience. These links do not constitute an endorsement of those sites. We have no control over their content and accept no responsibility for them or for any loss or damage that may arise from your use of them.</p>
+    </div>
+
+    <!-- 9. Privacy -->
+    <div class="policy-section">
+      <h2>Privacy</h2>
+      <p>Your use of this website and any personal information you provide are also governed by our <a href="privacy-policy.html" style="color: var(--navy); font-weight: 600;">Privacy Policy</a>, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices.</p>
+    </div>
+
+    <!-- 10. Governing Law -->
+    <div class="policy-section">
+      <h2>Governing Law</h2>
+      <p>These Terms are governed by the laws of the State of Oklahoma, without regard to its conflict of law principles. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Tulsa County, Oklahoma.</p>
+    </div>
+
+    <!-- 11. Changes -->
+    <div class="policy-section">
+      <h2>Changes to These Terms</h2>
+      <p>We reserve the right to update these Terms at any time. When we do, we will revise the "Effective Date" at the top of this page. Continued use of our website or SMS communications following any changes constitutes acceptance of the updated Terms.</p>
+    </div>
+
+    <!-- 12. Contact -->
+    <div class="policy-section">
+      <h2>Contact Us</h2>
+      <p>If you have questions about these Terms, please contact us:</p>
+      <ul>
+        <li><strong>McCammon Advanced Dentistry</strong></li>
+        <li>5404 S Memorial Drive, Tulsa, Oklahoma</li>
+        <li>Website: <a href="https://mccammonadvanceddentistry.com" style="color: var(--navy);">mccammonadvanceddentistry.com</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="gold-divider"></div>
+    <p>&copy; 2026 McCammon Advanced Dentistry &mdash; All Rights Reserved</p>
+    <p>5404 S Memorial Drive &bull; Tulsa, Oklahoma</p>
+    <div style="margin-top: 14px;">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+  </footer>
+
+</body>
+</html>
